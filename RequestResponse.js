@@ -54,6 +54,11 @@ let server=http.createServer(function (req, res) {
         res.write("<h1>This is Services page</h1>");
         res.end();
     }
+    else if(req.url==="/call now"){
+        res.writeHead(200,{"Content-type":"text/html"});
+        res.write("<h1>This is Call Now page</h1>");
+        res.end();
+    }
 })
 server.listen(8000)
 console.log('Server listening on Successful')

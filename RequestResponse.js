@@ -56,7 +56,7 @@ let server=http.createServer(function (req, res) {
     }
     else if(req.url==="/callnow"){
         res.writeHead(200,{"Content-type":"text/html"});
-        res.write("<h1>This is Call Now page</h1>");
+        res.write("<h1>This is Callnow page</h1>");
         res.end();
     }
 })
